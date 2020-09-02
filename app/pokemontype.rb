@@ -1,14 +1,12 @@
 class PokemonType
 
-
     attr_reader :pokemon, :type
-
+    attr_accessor 
     @@all = []
 
-    def initialize(pokemon, type, type2=nil)
+    def initialize(pokemon, type)
         @pokemon = pokemon
         @type = type
-        @type2 = type2
         @@all << self
     end
 
@@ -16,5 +14,6 @@ class PokemonType
         @@all
     end
 
-
+    
+    
 end

@@ -17,13 +17,13 @@ fighting = Type.new("Fighting", ["dark", "ice", "normal", "rock", "steel"], ["fa
 dark = Type.new("Dark",["ghost", "psychic"], ["fighting", "bug", "fairy"])
 rock = Type.new("Rock", ["fire", "flying", "ice", "bug"], ["fighting", "ground", "water", "grass", "steel" ])
 
-mewtwo_complete = PokemonType.new(mewtwo, psychic)
-charizard_complete = PokemonType.new(charizard, fire, flying)
-blaziken_complete = PokemonType.new(blaziken, fire, fighting)
-slowbro_complete = PokemonType.new(slowbro, water, psychic)
-tyranitar_complete = PokemonType.new(tyranitar, dark, rock)
+mewtwo_type = PokemonType.new(mewtwo, psychic)
+charizard_type = PokemonType.new(charizard, fire)
+blaziken_type = PokemonType.new(blaziken, fire)
+slowbro_type = PokemonType.new(slowbro, water)
+tyranitar_type = PokemonType.new(tyranitar, rock)
 
-
-
-puts "pokemon knows its types"
-puts mewtwo.types == [psychic]
+# puts "returns the pokemon that belong to a type"
+# p fire.pokemon
+p Pokemon.total_strength
+p Pokemon.highest_individual_strength
