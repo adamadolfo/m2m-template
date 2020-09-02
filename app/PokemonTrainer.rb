@@ -1,0 +1,4 @@
+class PokemonTrainer
+
+
+end
